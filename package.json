@@ -1,6 +1,6 @@
 {
   "name": "open-psd2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An open source framework for using banking API's built for PSD2 regulation.",
   "main": "lib/index.js",
   "scripts": {
@@ -32,5 +32,9 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "qs": "^6.5.2"
   }
 }
