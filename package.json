@@ -1,9 +1,10 @@
 {
   "name": "open-psd2",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "An open source framework for using banking API's built for PSD2 regulation.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,5 +28,9 @@
   "bugs": {
     "url": "https://github.com/ExtraBB/open-psd2/issues"
   },
-  "homepage": "https://github.com/ExtraBB/open-psd2#readme"
+  "homepage": "https://github.com/ExtraBB/open-psd2#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
