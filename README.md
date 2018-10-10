@@ -14,19 +14,19 @@ npm install
 
 Import the banking API that you need like this: 
 
-```
+```javascript
 import { ING } from "open-psd2";
 ```
 
 Create a new instance of it using your certificates:
 
-```
+```javascript
 const ing = new ING(true, fs.readFileSync("./secrets/example_client_signing.key"), "changeit", fs.readFileSync("./secrets/example_client_tls.cer"), fs.readFileSync("./secrets/example_client_tls.key"), "example_client_id");
 ```
 
 Then you can start using the built in functions to request data. For the ING API it is necessary to request both an access token and then a customer access token. Note that in this example we are using the sandbox and therefore do not require a user authorization code: 
 
-```
+```javascript
 app.get('/accounts', function (req, res) {
     ing.requestAccessToken("view_balance").then(access_token => {
         ing.requestCustomerAccessToken(null, access_token).then((customer_access_token) => {
