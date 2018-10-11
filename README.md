@@ -42,4 +42,4 @@ app.get('/accounts', function (req, res) {
 For future development I plan the following. First build up a few more Bank API's besides the ING api. Afterwards, see if we can create one unifying API that rules them all and in the darkness binds them. 
 
 ## Licence
-MIT (See `LICENSE.md`)
+GNU General Public License v3.0 - Copyright (C) 2018  Bruno dos Santos Carvalhal (See `LICENSE.md`)
