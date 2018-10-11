@@ -79,7 +79,6 @@ export default class ING {
     }
 
     async requestAPI(httpMethod: string, reqPath: string, access_token: string, bodyData = {}) {
-
         // URL encode body
         const body = qs.stringify(bodyData);
 
