@@ -2,6 +2,9 @@
 
 This is a library for using open banking api's of various banks. These API's are built for PSD2 regulation but they are not compatible with each other. Therefore I've started this package. Feel free to submit PR's and help build up this package!
 
+## Contributing
+This package is still a **Work in Progress**! All contributors are welcome. Feel free to submit a PR or send me a message on Github if you have any questions.
+
 ## Installation
 
 Run the following:
