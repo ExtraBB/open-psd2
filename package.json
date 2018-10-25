@@ -1,9 +1,10 @@
 {
   "name": "open-psd2",
-  "version": "1.1.6",
+  "version": "1.1.8",
   "description": "An open source framework for using banking API's built for PSD2 regulation.",
   "main": "lib/index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "build": "tsc -p tsconfig.json -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,7 +25,7 @@
     "bank"
   ],
   "author": "Bruno Carvalhal",
-  "license": "GPL-3.0-or-later",
+  "license": "GPL-3.0-only",
   "bugs": {
     "url": "https://github.com/ExtraBB/open-psd2/issues"
   },
